@@ -1,0 +1,109 @@
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/iron-icons/communication-icons.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-styles/color.html">
+<link rel="import" href="../bower_components/paper-styles/typography.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+
+
+<dom-module id="my-templates">
+  <!-- Defines the element's style and local DOM -->
+  <template>
+        <style include="shared-styles">
+        :host {
+            display: block;
+
+      }
+        paper-card {
+            width: 360px;
+            margin: 16px;
+            }
+            
+        a,a paper-button,
+        a:active paper-button,
+        a:visited paper-button {
+            color: #000;
+            text-decoration: none;
+            }
+        a:hover paper-button {
+            background-color: var(--paper-grey-300);    
+            }    
+    </style>
+      
+ <header id="content-header">
+    <p>Willkommen</p>
+      <h1>Finfire Bibliothek</h1>
+      
+      </header>
+      
+    <div class="card">
+        <h1>Templates Seite</h1>
+    </div>
+      
+      <custom-style>
+  <style is="custom-style">
+    .flex-wrap {
+      @apply --layout-horizontal;
+      @apply --layout-wrap;
+      width: 100%;
+      margin: 0px 16px;
+      
+    }
+  </style>
+</custom-style>
+
+<div class="flex-wrap ">
+  <div><paper-card heading="Kundenansicht" image="http://placehold.it/350x150/FFC107/000000" alt="Kundenansicht">
+  <div class="card-content">
+    Hier finden Sie das Layout Template für die Kundenansicht.
+  </div>
+  <div class="card-actions">
+    <a href="../src/my-templates/my-kundenansicht.html"  tabindex="-1"><paper-button>Anzeigen</paper-button></a>
+  </div>
+</paper-card></div>
+  <div><paper-card heading="Emmental" image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+  <div class="card-content">
+    Emmentaler or Emmental is a yellow, medium-hard cheese that originated in the area around Emmental, Switzerland. It is one of the cheeses of Switzerland, and is sometimes known as Swiss cheese.
+  </div>
+  <div class="card-actions">
+    <paper-button>Share</paper-button>
+    <paper-button>Explore!</paper-button>
+  </div>
+</paper-card></div>
+  <div><paper-card heading="Emmental" image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+  <div class="card-content">
+    Emmentaler or Emmental is a yellow, medium-hard cheese that originated in the area around Emmental, Switzerland. It is one of the cheeses of Switzerland, and is sometimes known as Swiss cheese.
+  </div>
+  <div class="card-actions">
+    <paper-button>Share</paper-button>
+    <paper-button>Explore!</paper-button>
+  </div>
+</paper-card></div>
+  <div><paper-card heading="Emmental" image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
+  <div class="card-content">
+    Emmentaler or Emmental is a yellow, medium-hard cheese that originated in the area around Emmental, Switzerland. It is one of the cheeses of Switzerland, and is sometimes known as Swiss cheese.
+  </div>
+  <div class="card-actions">
+    <paper-button>Share</paper-button>
+    <paper-button>Explore!</paper-button>
+  </div>
+</paper-card></div>
+</div>
+      
+  </template>
+  <!-- Creates the element's prototype and registers it -->
+  <script>
+    Polymer({
+      is: 'my-templates'
+    });
+  </script>
+</dom-module>

@@ -1,0 +1,61 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-radio-button/paper-radio-button.html">
+<link rel="import" href="../bower_components/paper-radio-group/paper-radio-group.html">
+
+
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-components">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+      }
+    </style>
+<header id="content-header">
+    <p>Finfire </p>
+      <h1>Components</h1>
+      
+      </header>
+    <div class="card">
+      <div class="circle">2</div>
+      <h1>Components</h1>
+      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.</p>
+      <p>Id nam odio natum malorum, tibique copiosae expetenda mel ea.Detracto suavitate repudiandae no eum. Id adhuc minim soluta nam.Id nam odio natum malorum, tibique copiosae expetenda mel ea.</p>
+        <div class="mdc-radio">
+  <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+  <div class="mdc-radio__background">
+    <div class="mdc-radio__outer-circle"></div>
+    <div class="mdc-radio__inner-circle"></div>
+  </div>
+</div>
+<label id="radio-1-label" for="radio-1">Radio 1</label>
+
+<div class="mdc-radio">
+  <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios">
+  <div class="mdc-radio__background">
+    <div class="mdc-radio__outer-circle"></div>
+    <div class="mdc-radio__inner-circle"></div>
+  </div>
+</div>
+<label id="radio-2-label" for="radio-2">Radio 2</label>
+        
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-components'
+    });
+  </script>
+</dom-module>
